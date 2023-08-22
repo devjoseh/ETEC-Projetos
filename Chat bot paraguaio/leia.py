@@ -8,5 +8,5 @@ def search(pergunta):
                 resp = linha.strip().split("=")[1]
                 respostas[perg.lower()] = resp.lower()
     except FileNotFoundError:
-        pass
+        return "Arquivo de treino não existe"
     return respostas.get(pergunta.lower(), "Não entendi sua questão")

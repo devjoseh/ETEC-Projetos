@@ -1,5 +1,6 @@
 import escreva as treina
 import leia as ler
+import hwriter as historico
 
 questao = input("Treinar ou conversar: ")
 
@@ -10,9 +11,25 @@ if(questao.lower() == "treinar"):
         resposta = str(input("Digite uma resposta: "))
         treina.question(pergunta, resposta)
         sair = str(input("Enter para continuar, ou sair: "))
+        if(sair.lower() == "sair"):
+            break
 elif (questao.lower() == "conversar"):
         sair = "n"
         while sair.lower() != "sair":       
             pergunta = str(input("Faça uma pergunta: "))
-            print(ler.search(pergunta))
             sair = str(input("Enter para continuar, ou sair: "))
+            if(sair.lower() == "sair"):
+                break
+            else:
+                resultado = ler.search(pergunta)
+                
+                if(resultado == "Não entendi sua questão"):
+                    print(resultado)
+                    historico.history(pergunta)
+                elif resultado == "Arquivo de treino não existe":
+                    break
+                else:
+                    print(resultado)
+else:
+    exit
+            

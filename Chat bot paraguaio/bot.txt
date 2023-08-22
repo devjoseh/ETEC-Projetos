@@ -7,3 +7,5 @@ melhor brinquedo=carrinho
 melhor celular=lg k9
 melhor marca=lg
 1+1=3
+biscoito ou bolacha=biscoito
+asdfg=adsfg
