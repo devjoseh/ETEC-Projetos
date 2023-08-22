@@ -1,0 +1,9 @@
+melhor cor=roxo
+melhor pais=nao existe
+melhor comida=coxinha
+melhor liquido=agua
+melhor carro=uno
+melhor brinquedo=carrinho
+melhor celular=lg k9
+melhor marca=lg
+1+1=3
