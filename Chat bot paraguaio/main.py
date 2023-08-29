@@ -21,18 +21,23 @@ elif (questao.lower() == "conversar"):
         sair = "n"
         while sair.lower() != "sair":       
             pergunta = str(input("Faça uma pergunta: "))
+
+            perguntaCrip = criptografia.encripta(pergunta)
+            
+            resultado = ler.search(perguntaCrip)
+            
+            if(resultado == "Não entendi sua questão"):
+                print(resultado)
+                historico.history(perguntaCrip)
+            elif resultado == "Arquivo de treino não existe":
+                break
+            else:
+                print(resultado)
+            
             sair = str(input("Enter para continuar, ou sair: "))
             if(sair.lower() == "sair"):
                 break
-            else:
-                resultado = ler.search(pergunta)
-                
-                if(resultado == "Não entendi sua questão"):
-                    print(resultado)
-                    historico.history(pergunta)
-                elif resultado == "Arquivo de treino não existe":
-                    break
-                else:
-                    print(resultado)
+
+
 else:
     exit

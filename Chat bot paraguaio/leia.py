@@ -1,3 +1,5 @@
+import criptografia
+
 def search(pergunta):
     arquivo = "bot.txt"
     respostas = {}
@@ -6,7 +8,7 @@ def search(pergunta):
             for linha in f:
                 perg = linha.strip().split("=")[0]
                 resp = linha.strip().split("=")[1]
-                respostas[perg.lower()] = resp.lower()
+                respostas[perg.lower()] = criptografia.descripta(resp.lower())
     except FileNotFoundError:
         return "Arquivo de treino não existe"
     return respostas.get(pergunta.lower(), "Não entendi sua questão")

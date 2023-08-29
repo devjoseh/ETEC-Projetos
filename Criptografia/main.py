@@ -16,4 +16,4 @@ def descripta(texto):
         texto_descripto += descripto.get(char, char)
     return texto_descripto
 
-print(encripta("ola manuella e wendell"))
+print(encripta("piada"))
