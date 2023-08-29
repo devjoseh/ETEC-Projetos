@@ -1,6 +1,7 @@
 import escreva as treina
 import leia as ler
 import hwriter as historico
+import criptografia
 
 questao = input("Treinar ou conversar: ")
 
@@ -9,6 +10,9 @@ if(questao.lower() == "treinar"):
     while sair.lower() != "sair":       
         pergunta = str(input("Digite uma pergunta: "))
         resposta = str(input("Digite uma resposta: "))
+
+        pergunta = criptografia.encripta(pergunta)
+        resposta = criptografia.encripta(resposta)
         treina.question(pergunta, resposta)
         sair = str(input("Enter para continuar, ou sair: "))
         if(sair.lower() == "sair"):
@@ -32,4 +36,3 @@ elif (questao.lower() == "conversar"):
                     print(resultado)
 else:
     exit
-            
