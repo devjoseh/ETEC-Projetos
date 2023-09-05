@@ -1,9 +1,6 @@
-import escreva as treina
-import leia as ler
-import hwriter as historico
 import criptografia
-import treinar as senha
-import passwordr
+import password as senha
+import archives
 
 senha_ativa = False
 
@@ -25,7 +22,7 @@ if(questao.lower() == "treinar"):
             resposta = str(input("Digite uma resposta: "))
             pergunta = criptografia.encripta(pergunta)
             resposta = criptografia.encripta(resposta)
-            treina.question(pergunta, resposta)
+            archives.write(pergunta, resposta)
             sair = str(input("Enter para continuar, ou sair: "))
             if(sair.lower() == "sair"):
                 senha_ativa = False
@@ -37,11 +34,11 @@ elif (questao.lower() == "conversar"):
 
             perguntaCrip = criptografia.encripta(pergunta)
             
-            resultado = ler.search(perguntaCrip)
+            resultado = archives.search(perguntaCrip)
             
             if(resultado == "Não entendi sua questão"):
                 print(resultado)
-                historico.history(perguntaCrip)
+                archives.historic(perguntaCrip)
             elif resultado == "Arquivo de treino não existe":
                 break
             else:
@@ -53,7 +50,7 @@ elif (questao.lower() == "conversar"):
 
 elif (questao.lower() == "configurar"):
     senhaNova = str(input("Digite qual será a nova senha: "))
-    passwordr.register(senhaNova)
+    archives.password(senhaNova)
     print("Senha nova registrada com sucesso!")
 else:
     exit

@@ -1,5 +1,3 @@
-import passwordr
-
 def ler():
     with open("senha.txt", "r", encoding="utf-8") as f:
         for linha in f:
