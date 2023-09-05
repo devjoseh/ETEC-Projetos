@@ -4,9 +4,7 @@ qbtufm/pv/dpyjoib=qbtufm
 divssbtdp/pv/tvtij=divssbtdp
 pojcvt/pv/dbssp=bwjbp
 spyp=nfmips/dps
-nfmips/dps=spypdbmwp/ufn/rvf/tpgsfs=tjn
 et/nfmips/rvf/ben=pcwjp
-uisfbet/pv/uxjuufs=uxjuufsdbmwp/pv/dbcfmvep=dbmwp
 3+3=6
 bcpcpsb/pv/nfmbodjb=nfmbodjb
 cbubub/pv/gsju=cbubub
@@ -15,3 +13,4 @@ dbdipssp/pv/hbup=hbup
 bnbouf/pv/fy=fy
 bcbdbuf/pv/cbobob=cbobob
 qbp/dpn/pwp=obp
+nfmips/dps=spyp
