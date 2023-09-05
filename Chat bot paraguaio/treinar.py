@@ -1,4 +1,12 @@
-senha = "1234"
+import passwordr
+
+def ler():
+    with open("senha.txt", "r", encoding="utf-8") as f:
+        for linha in f:
+            senhaR = linha
+            return senhaR
+
+senha = ler()
 
 def treinar():
     pedir_senha = str(input("Digite a senha de acesso: "))
@@ -7,4 +15,3 @@ def treinar():
         return False
     else:
         return True
-

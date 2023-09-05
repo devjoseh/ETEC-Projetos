@@ -3,6 +3,7 @@ import leia as ler
 import hwriter as historico
 import criptografia
 import treinar as senha
+import passwordr
 
 senha_ativa = False
 
@@ -50,6 +51,9 @@ elif (questao.lower() == "conversar"):
             if(sair.lower() == "sair"):
                 break
 
-
+elif (questao.lower() == "configurar"):
+    senhaNova = str(input("Digite qual será a nova senha: "))
+    passwordr.register(senhaNova)
+    print("Senha nova registrada com sucesso!")
 else:
     exit

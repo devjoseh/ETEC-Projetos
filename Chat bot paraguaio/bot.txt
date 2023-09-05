@@ -12,3 +12,5 @@ bcpcpsb/pv/nfmbodjb=nfmbodjb
 cbubub/pv/gsju=cbubub
 nfmbodjb/pv/bcpcpsb=nfmbodjb
 dbdipssp/pv/hbup=hbup
+bnbouf/pv/fy=fy
+bcbdbuf/pv/cbobob=cbobob
