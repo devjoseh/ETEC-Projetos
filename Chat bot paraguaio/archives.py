@@ -32,4 +32,4 @@ def password(senha):
     arquivo = "dados/senha.txt"
 
     with open(arquivo, "w", encoding='utf-8') as f:
-        f.write(f"{senha}")
+        f.write(f"{criptografia.encripta(senha)}")
