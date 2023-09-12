@@ -2,13 +2,13 @@ import criptografia
 
 # Escrever as perguntas e respostas no arquivo bot.txt
 def write(pergunta, resposta):
-    arquivo = "bot.txt"
+    arquivo = "dados/bot.txt"
     with open(arquivo, "a", encoding='utf-8') as f:
         f.write(f"{pergunta}={resposta}\n")
 
 # Faz a pesquisa das perguntas e acha a resposta dentro do arquivo bot.txt
 def search(pergunta):
-    arquivo = "bot.txt"
+    arquivo = "dados/bot.txt"
     respostas = {}
     try:
         with open(arquivo, "r", encoding="utf-8") as f:
@@ -22,14 +22,14 @@ def search(pergunta):
 
 # Quando o usuário fizer uma pergunta, ela é registrada no histórico caso não seja encontrada
 def historic(pergunta):
-    arquivo = "historico.txt"
+    arquivo = "dados/historico.txt"
 
     with open(arquivo, "a", encoding='utf-8') as f:
         f.write(f"{pergunta}\n")
 
 # Registra uma nova senha
 def password(senha):
-    arquivo = "senha.txt"
+    arquivo = "dados/senha.txt"
 
     with open(arquivo, "w", encoding='utf-8') as f:
         f.write(f"{senha}")

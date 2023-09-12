@@ -14,3 +14,4 @@ bnbouf/pv/fy=fy
 bcbdbuf/pv/cbobob=cbobob
 qbp/dpn/pwp=obp
 nfmips/dps=spyp
+cbubub/pv/qbp=qbp
