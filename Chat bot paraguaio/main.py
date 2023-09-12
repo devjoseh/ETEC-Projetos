@@ -12,6 +12,9 @@ if(questao.lower() == "treinar"):
         
         if(senha_ativa == False):
             senha_digitada = senha.treinar()
+            if(senha_digitada == "Inexistente"):
+                print("Não existe nenhuma senha configurada")
+                break
             if(senha_digitada == False):
                 print("Senha incorreta, acesso negado.")
             else:

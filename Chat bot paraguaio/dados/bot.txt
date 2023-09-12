@@ -15,3 +15,5 @@ bcbdbuf/pv/cbobob=cbobob
 qbp/dpn/pwp=obp
 nfmips/dps=spyp
 cbubub/pv/qbp=qbp
+bti=WERTH
+spyp/pv/csbodp=spyp
